@@ -14,6 +14,7 @@ console.log(stringify(false));
       return [this.x, this.y];
     }
   };
+
   console.log(stringify(point));
 }
 
@@ -28,6 +29,7 @@ console.log(stringify(false));
       return [this.x, this.y];
     }
   }
+
   const point = new Point(30, 40);
   console.log(stringify(point));
 }

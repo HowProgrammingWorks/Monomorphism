@@ -13,11 +13,13 @@ const avg = array => {
   console.dir({ array });
   console.log(avg(array));
 }
+
 {
   const array = [50, 56, 80];
   console.dir({ array });
   console.log(avg(array));
 }
+
 {
   const array = [50, 55, 80 / 7];
   console.dir({ array });

@@ -1,2 +1,2 @@
 clear
-node --trace-deopt --trace-opt 4-function.js
+node --trace-deopt --trace-opt 5-function.js

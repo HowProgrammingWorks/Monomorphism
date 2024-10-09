@@ -1,6 +1,6 @@
 'use strict';
 
-const avg = array => {
+const avg = (array) => {
   let sum = 0;
   for (const item of array) {
     sum += item;

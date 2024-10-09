@@ -1,6 +1,6 @@
 'use strict';
 
-const getX = obj => obj.x;
+const getX = (obj) => obj.x;
 
 console.log(getX({ x: 10 }));        // { x: number }
 console.log(getX({ x: 70 }));        // { x: number }

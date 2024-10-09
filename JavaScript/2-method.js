@@ -1,6 +1,6 @@
 'use strict';
 
-const stringify = obj => obj.toString();
+const stringify = (obj) => obj.toString();
 
 console.log(stringify(10));
 console.log(stringify('ten'));
@@ -12,7 +12,7 @@ console.log(stringify(false));
     y: 20,
     toString() {
       return [this.x, this.y];
-    }
+    },
   };
 
   console.log(stringify(point));

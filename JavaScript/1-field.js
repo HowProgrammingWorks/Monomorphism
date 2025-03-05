@@ -2,15 +2,16 @@
 
 const getX = (obj) => obj.x;
 
-console.log(getX({ x: 10 }));        // { x: number }
-console.log(getX({ x: 70 }));        // { x: number }
+console.log(getX({ x: 10 })); // { x: number }
+console.log(getX({ x: 70 })); // { x: number }
 console.log(getX({ x: 10, y: 20 })); // { x: number, y: number }
 console.log(getX({ y: 20, x: 10 })); // { y: number, x: number }
 
 class Point {
-  constructor(x, y) { // {}
-    this.x = x;       // { x: number }
-    this.y = y;       // { x: number, y: number }
+  constructor(x, y) {
+    // {}
+    this.x = x; // { x: number }
+    this.y = y; // { x: number, y: number }
   }
 }
 

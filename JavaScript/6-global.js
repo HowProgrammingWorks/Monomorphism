@@ -3,7 +3,6 @@
 global.x = 0;
 
 const main = () => {
-
   const incGlobalX = () => {
     ++x;
   };
@@ -11,7 +10,6 @@ const main = () => {
   for (let i = 0; i < 1000000; i++) {
     incGlobalX();
   }
-
 };
 
 main();

@@ -1,15 +1,17 @@
 {
-  "name": "howprogrammingworks",
+  "name": "patterns",
   "version": "1.0.0",
-  "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
-  "license": "MIT",
   "scripts": {
-    "lint": "eslint . && prettier --check \"**/*.js\"",
-    "fix": "eslint . --fix && prettier --write \"**/*.js\""
+    "lint": "eslint . && prettier -c \"**/*.js\"",
+    "fix": "eslint . --fix && prettier --write \"**/*.js\"",
+    "build": "tsc; prettier --write \"**/*.js\""
   },
-  "devDependencies": {
-    "eslint": "^9.10.0",
+  "author": "Timur Shemsedinov",
+  "private": true,
+  "dependencies": {
+    "eslint": "^9.12.0",
     "eslint-config-metarhia": "^9.1.1",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
   }
 }

@@ -1,13 +1,19 @@
 'use strict';
 
+// TODO: Refactor to monomorphic code
+// and optimize JavaScript for V8
+
 const adder = (x) => {
   const f = (y) => {
-    if (y) x += y;
-    else return x;
+    // Use SOLID/SRP
+    if (y)
+      x += y; // Rewrite without if statement
+    else return x; // Fix: consistent-return
   };
-  f.map = (fn) => fn(x);
+  f.map = (fn) => fn(x); // Do not use mix-ins
   f.set = (a) => {
-    x = a;
+    // Improve naming
+    x = a; // Do not change incoming parameters
   };
   return f;
 };

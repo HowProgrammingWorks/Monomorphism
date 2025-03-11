@@ -12,8 +12,8 @@ class Adder {
     else return this.#value;
   }
 
-  map(fn: AdderMapFunction): number {
-    return fn(this.#value);
+  map(fn: AdderMapFunction): Adder {
+    return new Adder(fn(this.#value));
   }
 
   set(value: number): void {

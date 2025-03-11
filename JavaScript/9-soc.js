@@ -6,7 +6,7 @@ const adder = (initial) => {
     value += delta;
   };
   const get = () => value;
-  const map = (fn) => fn(value);
+  const map = (fn) => adder(fn(value));
   const set = (x) => {
     value = x;
   };
@@ -20,8 +20,8 @@ console.log({ step1: counter.get() });
 counter.add(5);
 console.log({ step2: counter.get() });
 const twice = (a) => a * 2;
-const value = counter.map(twice);
-console.log({ value });
+const counter2 = counter.map(twice);
+console.log({ counter2: counter2.get() });
 console.log({ step3: counter.get() });
 counter.set(50);
 console.log({ step4: counter.get() });

@@ -2,7 +2,7 @@ type AdderMapFunction = (value: number) => number;
 
 interface Adder {
   (y?: number): number | void;
-  map: (fn: AdderMapFunction) => number;
+  map: (fn: AdderMapFunction) => Adder;
   set: (a: number) => void;
 }
 
@@ -12,7 +12,7 @@ const adder = (x: number): Adder => {
     else return x;
   };
 
-  f.map = (fn: AdderMapFunction): number => fn(x);
+  f.map = (fn: AdderMapFunction): Adder => adder(fn(x));
   f.set = (a: number): void => {
     x = a;
   };
